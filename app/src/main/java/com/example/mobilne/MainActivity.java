@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView[] DiceImages;
-    private
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +31,13 @@ public class MainActivity extends AppCompatActivity {
         TextView thisTime_result = findViewById(R.id.thisTime_result);
         TextView result = findViewById(R.id.result);
 
-        DiceImages = [
-            findViewById(R.id.imageView1),
-            findViewById(R.id.imageView2),
-            findViewById(R.id.imageView3),
-            findViewById(R.id.imageView4),
-            findViewById(R.id.imageView5)
-        ]
+        DiceImages = new ImageView[]{
+                findViewById(R.id.imageView1),
+                findViewById(R.id.imageView2),
+                findViewById(R.id.imageView3),
+                findViewById(R.id.imageView4),
+                findViewById(R.id.imageView5)
+        };
 
 
         Button Throw = findViewById(R.id.button_throw);
